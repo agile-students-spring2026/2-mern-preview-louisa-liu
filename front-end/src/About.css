@@ -1,0 +1,96 @@
+.about-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #fafafa, #f3f6ff);
+  color: #111827;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 920px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+  overflow: hidden;
+}
+
+.about-header {
+  padding: 22px 24px;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.08);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.about-title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.about-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(17, 24, 39, 0.6);
+}
+
+.about-body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 18px;
+  padding: 22px 24px;
+}
+
+.about-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.12);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-paragraph {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 15px;
+  color: rgba(17, 24, 39, 0.9);
+}
+
+.about-badges {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  background: rgba(99, 102, 241, 0.08);
+}
+
+@media (max-width: 760px) {
+  .about-body {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    width: 180px;
+    height: 180px;
+  }
+}
